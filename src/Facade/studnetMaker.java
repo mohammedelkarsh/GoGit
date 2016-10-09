@@ -13,9 +13,11 @@ public class studnetMaker {
     private static studnetMaker aStMaker;
     private Studnet itStudent;
     private Studnet engStudent;
+    private Studnet artStudent;
     private studnetMaker(){
     itStudent = new ITStudent();
     engStudent = new ENGStudent();
+    artStudent = new ARTStudent();
     }
     public static studnetMaker getMaker(){
         if(aStMaker == null)
@@ -31,4 +33,7 @@ public class studnetMaker {
         engStudent.show();
     }
     
+    public void viewARTStudent(){
+        artStudent.show();
+    }
 }
